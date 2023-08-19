@@ -1,0 +1,83 @@
+.header {
+  height: 100vh;
+  position: relative;
+  background-color: #c4c4c4;
+  background-image: url("./../../img/slider-bg/01.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.header a {
+  color: #ffffff;
+}
+
+.header__content {
+  position: absolute;
+  z-index: 9;
+  top: 50px;
+  left: 70px;
+  right: 70px;
+  bottom: 80px;
+  pointer-events: none;
+
+  @media (max-width: 1200px) {
+    top: 40px;
+    left: 40px;
+    right: 40px;
+    bottom: 60px;
+  }
+
+  @media (max-width: 767px) {
+    top: 30px;
+    left: 5%;
+    right: 5%;
+    bottom: 30px;
+  }
+}
+
+.header__nav {
+  pointer-events: all;
+}
+
+.header__socials {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: all;
+
+  @media (max-width: 767px) {
+    display: none;
+  }
+
+  @media (max-width: 600px) {
+    top: 40%;
+  }
+}
+.header__see-more {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  pointer-events: all;
+}
+.header__slider-controls {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  pointer-events: all;
+
+  background-color: #979797;
+  height: 60px;
+  width: 80px;
+}
+.header__scrollbar {
+  pointer-events: all;
+
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 400px;
+  background-color: #979797;
+}
