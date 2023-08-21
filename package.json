@@ -30,9 +30,6 @@
     "style-loader": "^3.3.3",
     "webpack-stream": "^7.0.0"
   },
-  "scripts": {
-    "deploy": "gulp build && gh-pages -d build"
-  },
   "babel": {
     "presets": [
       "@babel/preset-env"
