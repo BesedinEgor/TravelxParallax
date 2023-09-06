@@ -2,7 +2,6 @@
   height: 100vh;
   position: relative;
   background-color: #c4c4c4;
-  background-image: url("./../img/slider-bg/01.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
 }
@@ -54,30 +53,29 @@
     top: 40%;
   }
 }
+
 .header__see-more {
   position: absolute;
   left: 0;
   bottom: 0;
   pointer-events: all;
 }
+
 .header__slider-controls {
   position: absolute;
   right: 0;
   bottom: 0;
   pointer-events: all;
-
-  background-color: #979797;
-  height: 60px;
-  width: 80px;
 }
+
 .header__scrollbar {
   pointer-events: all;
-
   position: absolute;
   right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 10px;
-  height: 400px;
-  background-color: #979797;
+  top: 45%;
+  width: 400px;
+  height: 10px;
+
+  transform: rotate(90deg) translate(50%, 0);
+  transform-origin: right top;
 }
