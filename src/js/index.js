@@ -1,5 +1,5 @@
-// import mobileNav from './modules/mobile-nav.js';
-// mobileNav();
+import mobileNav from "./modules/mobile-nav.js";
+mobileNav();
 
 // import Swiper bundle with all modules installed
 import Swiper from "swiper/bundle";
