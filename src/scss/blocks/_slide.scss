@@ -9,6 +9,12 @@
   -webkit-text-fill-color: transparent;
 }
 
+@mixin background-control {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .slide {
   display: flex;
   flex-direction: column;
@@ -16,29 +22,32 @@
   height: 100vh;
   overflow: hidden;
   padding-bottom: 80px;
-  background-position: center center !important;
-  background-size: cover !important;
-  background-repeat: no-repeat !important;
   color: #ffffff;
+  @include background-control;
 
   &--norway {
     background: var(--radial-bg), var(--liner-bg), url("./../img/slider-bg/01.jpg");
+    @include background-control;
   }
 
   &--austria {
     background: var(--radial-bg), var(--liner-bg), url("./../img/slider-bg/02.jpg");
+    @include background-control;
   }
 
   &--uae {
     background: var(--radial-bg), var(--liner-bg), url("./../img/slider-bg/03.jpg");
+    @include background-control;
   }
 
   &--thailand {
     background: var(--radial-bg), var(--liner-bg), url("./../img/slider-bg/04.jpg");
+    @include background-control;
   }
 
   &--morocco {
     background: var(--radial-bg), var(--liner-bg), url("./../img/slider-bg/05.jpg");
+    @include background-control;
   }
 
   &::before {
