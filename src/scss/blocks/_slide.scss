@@ -3,6 +3,12 @@
   --liner-bg: linear-gradient(181deg, rgba(0, 0, 0, 0.2) 0.91%, rgba(255, 255, 255, 0) 116.71%, rgba(255, 255, 255, 0) 116.72%);
 }
 
+@mixin background-clip {
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .slide {
   display: flex;
   flex-direction: column;
@@ -10,11 +16,30 @@
   height: 100vh;
   overflow: hidden;
   padding-bottom: 80px;
-  background: var(--radial-bg), var(--liner-bg), url("./../img/slider-bg/01.jpg");
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-position: center center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
   color: #ffffff;
+
+  &--norway {
+    background: var(--radial-bg), var(--liner-bg), url("./../img/slider-bg/01.jpg");
+  }
+
+  &--austria {
+    background: var(--radial-bg), var(--liner-bg), url("./../img/slider-bg/02.jpg");
+  }
+
+  &--uae {
+    background: var(--radial-bg), var(--liner-bg), url("./../img/slider-bg/03.jpg");
+  }
+
+  &--thailand {
+    background: var(--radial-bg), var(--liner-bg), url("./../img/slider-bg/04.jpg");
+  }
+
+  &--morocco {
+    background: var(--radial-bg), var(--liner-bg), url("./../img/slider-bg/05.jpg");
+  }
 
   &::before {
     content: "";
@@ -34,12 +59,13 @@
     padding-bottom: 40px;
   }
 }
+
 .slide__header {
   position: relative;
   text-align: center;
 }
 
-.slide__tegline {
+.slide__tagline {
   position: absolute;
   top: -8px;
   width: 100%;
@@ -65,10 +91,29 @@
 
   span {
     padding: 0 10px;
-    background: linear-gradient(47.06deg, #000000 -3.87%, rgba(255, 255, 255, 0) 20.89%), #ffffff;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    @include background-clip;
+  }
+
+  &--norway span {
+    background: linear-gradient(47.06deg, #011e26 -3.87%, rgba(255, 255, 255, 0) 20.89%), #ffffff;
+    @include background-clip;
+  }
+
+  &--austria span {
+    background: linear-gradient(47.06deg, #394d51 -3.87%, rgba(255, 255, 255, 0) 20.89%), #ffffff;
+    @include background-clip;
+  }
+  &--uae span {
+    background: linear-gradient(47.06deg, #aa6621 3.13%, rgba(255, 255, 255, 0) 20.89%), #ffffff;
+    @include background-clip;
+  }
+  &--thailand span {
+    background: linear-gradient(47.06deg, #1d767e -3.87%, rgba(255, 255, 255, 0) 20.89%), #ffffff;
+    @include background-clip;
+  }
+  &--morocco span {
+    background: linear-gradient(47.06deg, #94654a -3.87%, rgba(255, 255, 255, 0) 20.89%), #ffffff;
+    @include background-clip;
   }
 }
 
