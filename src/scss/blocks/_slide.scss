@@ -4,15 +4,15 @@
 }
 
 @mixin background-clip {
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
 }
 
 @mixin background-control {
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-position: center center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
 }
 
 .slide {
