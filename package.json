@@ -39,6 +39,9 @@
     "last 5 versions"
   ],
   "dependencies": {
+    "@easepick/bundle": "^1.2.1",
+    "@tarekraafat/autocomplete.js": "^10.2.7",
+    "country-list-js": "^3.1.7",
     "swiper": "^10.2.0"
   }
 }
