@@ -1,3 +1,7 @@
+// import Swiper bundle with all modules installed
+import Swiper from "swiper/bundle";
+import "swiper/css/bundle";
+
 import { easepick, TimePlugin } from "@easepick/bundle";
 import autoComplete from "@tarekraafat/autocomplete.js";
 import countryList from "./countrys/countryList.js";
@@ -25,12 +29,9 @@ const autoCompleteJS = new autoComplete({
   searchEngine: "strict",
 });
 
-// import Swiper bundle with all modules installed
-import Swiper from "swiper/bundle";
-import "swiper/css/bundle";
 
 // init Swiper:
-const swiper = new Swiper(".swiper", {
+const swiperHeader = new Swiper(".swiper-header", {
   // Optional parameters
 
   loop: true,
@@ -65,4 +66,14 @@ const picker = new easepick.create({
   format: "HH:mm, DD/MM/YY",
   zIndex: 10,
   plugins: [TimePlugin],
+});
+
+// init Swiper:
+const swiperPopular = new Swiper(".swiper-popular", {
+  slidesPerView: 4,
+  spaceBetween: 30,
+  navigation: {
+    nextEl: '#sliderRight',
+    prevEl: '#sliderLeft',
+  },
 });
