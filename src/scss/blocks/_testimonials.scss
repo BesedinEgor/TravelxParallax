@@ -1,0 +1,39 @@
+.testimonials__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  overflow: hidden;
+}
+.testimonials__col {
+  display: grid;
+  gap: 32px;
+
+  animation: slideUp 15s linear infinite;
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(0%);
+  }
+
+  95% {
+    transform: translateY(-50%);
+    opacity: 1;
+    filter: blur(0);
+  }
+  97% {
+    transform: translateY(-50%);
+    opacity: 0;
+    filter: blur(10px);
+  }
+  98% {
+    transform: translateY(0%);
+    opacity: 0;
+    filter: blur(10px);
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+    filter: blur(0);
+  }
+}
