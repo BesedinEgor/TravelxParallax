@@ -29,11 +29,7 @@ const autoCompleteJS = new autoComplete({
   searchEngine: "strict",
 });
 
-
-// init Swiper:
 const swiperHeader = new Swiper(".swiper-header", {
-  // Optional parameters
-
   loop: true,
   parallax: true,
   speed: 1000,
@@ -42,19 +38,16 @@ const swiperHeader = new Swiper(".swiper-header", {
     enabled: true,
   },
 
-  // If we need pagination
   pagination: {
     el: ".slider-controls__count",
     type: "fraction",
   },
 
-  // Navigation arrows
   navigation: {
     nextEl: "#sliderNext",
     prevEl: "#sliderPrev",
   },
 
-  // And if we need scrollbar
   scrollbar: {
     el: ".swiper-scrollbar",
   },
@@ -68,12 +61,57 @@ const picker = new easepick.create({
   plugins: [TimePlugin],
 });
 
-// init Swiper:
 const swiperPopular = new Swiper(".swiper-popular", {
   slidesPerView: 4,
   spaceBetween: 30,
   navigation: {
-    nextEl: '#sliderRight',
-    prevEl: '#sliderLeft',
+    nextEl: "#sliderRight",
+    prevEl: "#sliderLeft",
+  },
+});
+
+const swiperTestimonialsCol1 = new Swiper("#testimonials-col-1", {
+  direction: "vertical",
+  slidesPerView: "auto",
+  spaceBetween: 32,
+  grabCursor: true,
+  a11y: false,
+  freeMode: true,
+  speed: 4000,
+  loop: true,
+  autoplay: {
+    delay: 0,
+    disableOnInteraction: false,
+  },
+});
+
+const swiperTestimonialsCol2 = new Swiper("#testimonials-col-2", {
+  direction: "vertical",
+  slidesPerView: "auto",
+  spaceBetween: 32,
+  grabCursor: true,
+  a11y: false,
+  freeMode: true,
+  speed: 4000,
+  loop: true,
+  autoplay: {
+    delay: 0,
+    disableOnInteraction: false,
+    reverseDirection: true,
+  },
+});
+
+const swiperTestimonialsCol3 = new Swiper("#testimonials-col-3", {
+  direction: "vertical",
+  slidesPerView: "auto",
+  spaceBetween: 32,
+  grabCursor: true,
+  a11y: false,
+  freeMode: true,
+  speed: 4000,
+  loop: true,
+  autoplay: {
+    delay: 0,
+    disableOnInteraction: false,
   },
 });

@@ -105,7 +105,7 @@ gulp.task('server:dev', function () {
 
 gulp.task('watch:dev', function () {
 	gulp.watch('./src/scss/**/*.scss', gulp.parallel('sass:dev'));
-	gulp.watch('./src/html/**/*.html', gulp.parallel('html:dev'));
+	gulp.watch('./src/html/**/*.*', gulp.parallel('html:dev'));
 	gulp.watch('./src/img/**/*', gulp.parallel('images:dev'));
 	gulp.watch('./src/fonts/**/*', gulp.parallel('fonts:dev'));
 	gulp.watch('./src/files/**/*', gulp.parallel('files:dev'));

@@ -1,22 +1,11 @@
 <div class="swiper swiper-popular">
   <div class="swiper-wrapper">
-    <div class="swiper-slide">
-      @@include('./../cardsPopular/venice.html')
+    <div class="swiper swiper-popular">
+      <div class="swiper-wrapper">
+        @@loop('./../templates/popular-slider.html', './data/popular-mokky.json')
+        </div>
+      </div>
     </div>
-    <div class="swiper-slide">
-      @@include('./../cardsPopular/venice.html')
-    </div>
-    <div class="swiper-slide">
-      @@include('./../cardsPopular/venice.html')
-    </div>
-    <div class="swiper-slide">
-      @@include('./../cardsPopular/venice.html')
-    </div>
-    <div class="swiper-slide">
-      @@include('./../cardsPopular/venice.html')
-    </div>
-    <div class="swiper-slide">
-      @@include('./../cardsPopular/venice.html')
-    </div>
+    
   </div>
 </div>
