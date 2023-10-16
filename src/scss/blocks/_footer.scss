@@ -6,12 +6,21 @@
   a {
     color: #ffffff;
   }
+
+  @include mediaMobile {
+    padding: 40px 0px;
+  }
 }
 .footer__row {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 128px;
   align-items: start;
+
+  @include mediaMobile {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
 }
 .footer__copyright {
   display: grid;
@@ -23,6 +32,10 @@
   grid-template-columns: 1fr 1fr;
   align-items: start;
   gap: 40px;
+
+  @include mediaMobile {
+    grid-row: -1 / 1;
+  }
 }
 
 .footer-nav__title {

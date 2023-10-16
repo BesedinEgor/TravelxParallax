@@ -1,12 +1,26 @@
 .partners {
   padding: 60px 0;
+
+  @include mediaMobile {
+    padding: 30px 0;
+  }
 }
 
 .partners__row {
   display: flex;
   justify-content: space-between;
-  gap: 30px;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+
+  @include mediaLaptop {
+    gap: 20px;
+    justify-content: center;
+  }
+
+  @include mediaTablet {
+    flex-direction: column;
+  }
 }
 .partners__title {
   font-size: 24px;
@@ -19,4 +33,10 @@
     display: flex;
     align-items: center;
     gap: 32px;
+
+    @include mediaTablet {
+     justify-content: center;
+     flex-wrap: wrap;
+     gap: 15px;
+    }
 }

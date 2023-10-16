@@ -29,6 +29,24 @@ body {
     left: 0;
     bottom: 0;
     z-index: -1;
+
+    @include mediaMobile{
+      width: 184px;
+      height: 12px;
+      background-size: contain;
+    }
+  }
+
+  @include mediaTablet {
+    font-size: 52px;
+  }
+
+  @include mediaMobile{
+    font-size: 32px;
+  }
+
+  @include mediaMobileXS {
+    font-size: 28px;
   }
 }
 
@@ -37,6 +55,10 @@ body {
   font-weight: 500;
   line-height: normal;
   color: #181818;
+
+  @include mediaMobile {
+    font-size: 28px;
+  }
 }
 
 .text {
@@ -46,4 +68,8 @@ body {
   font-style: normal;
   font-weight: 450;
   line-height: 150%; /* 27px */
+
+  @include mediaMobile{
+    font-size: 16px;
+  }
 }
