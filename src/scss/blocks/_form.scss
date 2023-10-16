@@ -20,13 +20,15 @@
   background-position: 0 0;
   background-size: auto;
 
-
-
   span {
     font-size: 16px;
     font-weight: 500;
     line-height: normal;
     color: #181818;
+  }
+
+  &--calendar {
+  background-image: url('../../img/icons/calendar.svg');
   }
 }
 
@@ -41,4 +43,8 @@
 }
 
 .form__btn {
+  transition: opacity .2s ease-in;
+  :hover {
+    opacity: 0.8;
+  }
 }
