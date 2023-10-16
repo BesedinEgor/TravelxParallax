@@ -29,7 +29,7 @@
   padding-left: 36px;
   display: grid;
   gap: 8px;
-  background-image: url("../../img/icons/map.svg");
+  background-image: url("../img/icons/map.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: auto;
@@ -42,7 +42,7 @@
   }
 
   &--calendar {
-    background-image: url("../../img/icons/calendar.svg");
+    background-image: url("../img/icons/calendar.svg");
   }
 }
 
