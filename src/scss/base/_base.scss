@@ -6,6 +6,7 @@ html {
 
 body {
   font-family: "Montserrat", sans-serif;
+  color: #181818;
 }
 
 .title-1 {
@@ -30,7 +31,7 @@ body {
     bottom: 0;
     z-index: -1;
 
-    @include mediaMobile{
+    @include mediaMobile {
       width: 184px;
       height: 12px;
       background-size: contain;
@@ -41,7 +42,7 @@ body {
     font-size: 52px;
   }
 
-  @include mediaMobile{
+  @include mediaMobile {
     font-size: 32px;
   }
 
@@ -69,7 +70,7 @@ body {
   font-weight: 450;
   line-height: 150%; /* 27px */
 
-  @include mediaMobile{
+  @include mediaMobile {
     font-size: 16px;
   }
 }
