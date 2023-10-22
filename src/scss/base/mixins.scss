@@ -10,6 +10,12 @@
     }
 }
 
+@mixin mediaTabletS () {
+    @media (max-width: 835px) {
+        @content;
+    }
+}
+
 @mixin mediaMobile () {
 	@media (max-width: 767px) {
 		@content;

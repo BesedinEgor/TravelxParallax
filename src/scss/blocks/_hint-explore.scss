@@ -1,0 +1,11 @@
+.hint-explore {
+    position: absolute;
+    right: -7%;
+    top: 7%;
+    max-width: 300px;
+
+    @include mediaMobileXS {
+        right: 50%;
+        translate: 50%;
+      }
+}
