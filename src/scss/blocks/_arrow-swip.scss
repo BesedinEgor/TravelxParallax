@@ -1,0 +1,41 @@
+.arrow-swipe {
+  position: absolute;
+  top: 40%;
+  left: 87%;
+  transform: translateX(-50%);
+  transform: rotate(-90deg);
+  cursor: grab;
+
+  span {
+    display: block;
+    width: 1.5vw;
+    height: 1.5vw;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.3);
+    border-right: 3px solid rgba(255, 255, 255, 0.3);
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+
+    &:nth-child(2) {
+        animation-delay: -0.2s;
+    }
+    &:last-child {
+        animation-delay: -0.4s;
+    }
+  }
+}
+
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(20px, 20px);
+    }
+}
