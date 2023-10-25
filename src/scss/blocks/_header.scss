@@ -32,6 +32,51 @@
     right: 5%;
     bottom: 30px;
   }
+
+  .header__scrollDownCenter {
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    translate: -50% -50%;
+    rotate: 180deg;
+
+    @include mediaMobile {
+      top: 50%;
+    }
+
+    .arrow-swip {
+      position: absolute;
+      rotate: 180deg;
+
+      @include mediaMobile {
+        display: block;
+      }
+
+      span {
+        border-bottom: 3px solid rgba(255, 255, 255, 0.3);
+        border-right: 3px solid rgba(255, 255, 255, 0.3);
+
+        @include mediaMobile {
+          width: 2.5vw;
+          height: 2.5vw;
+
+          @media (max-height: 780px) {
+            display: none;
+          }
+        }
+
+        @include mediaMobileM {
+          width: 3.5vw;
+          height: 3.5vw;
+        }
+
+        @include mediaMobileXS {
+          width: 5vw;
+          height: 5vw;
+        }
+      }
+    }
+  }
 }
 
 .header__nav {
